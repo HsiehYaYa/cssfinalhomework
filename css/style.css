@@ -1,0 +1,226 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1000px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #444;
+}
+.topbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 15px;
+    background-color: #f6f6f6;
+}
+.topbar img{
+    vertical-align:text-top;
+    padding-right: 2px;
+}
+.topbar li:first-child ::after{
+    content: '|';
+    color: gray;
+    padding:0 10px ;
+}
+.topbar li a{
+    display: block;
+    align-items: center;
+}
+.fbicon a{
+    color: #4460a0;
+}
+.fbicon a:hover{
+    color: #213155;
+}
+.twittericon a{
+    color: #00aaec;
+}
+.twittericon a:hover{
+    color: #0176a4;
+}
+.menu{
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+.menu h1 a{
+    width: 170px;
+    height: 40px;
+    margin-left: 20px;
+    background: url(https://raw.githubusercontent.com/HsiehYaYa/cssfinalhomework/main/images/hexlogo.png) no-repeat left bottom;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;  
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav li a{
+    display: block;
+    margin: 0 15px;
+    padding: 15px 10px;
+    color: #00cc99;
+    border-bottom: 4px solid transparent;
+}
+.nav li a:hover{
+    border-bottom: 4px solid #00cc99;
+}
+.banner{
+    background:url(https://raw.githubusercontent.com/HsiehYaYa/cssfinalhomework/main/images/banner.png)no-repeat center;
+    height: 350px;
+    position: relative;
+}
+.banner h2{
+    width: 100%;
+    font-size: 35px;
+	color: #fff;
+	line-height: 50px;
+    padding: 35px 20px;
+	position: absolute;
+	top: 95px;
+	background: rgba(0, 0, 0, 0.2);
+}
+.course-list{
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.course-list .courseI-item{
+    width: 300px;
+    padding: 20px;
+    border-radius:5px;
+    box-shadow: 0px 2px 2px #aaa;
+}
+.courseI-item img{
+    margin: 0 auto;
+    display: block;
+}
+.courseI-item h3{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.courseI-item p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.jQuery-list li{
+    list-style: disc;
+    padding:3px 0;
+    margin: 0 20px;
+}
+.compare h2{
+    padding: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.compare table{
+    margin: 0 auto 60px;
+    width: 80%;
+}
+.compare table th,td{
+    padding: 10px 20px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.compare th{
+	background-color: #f6f6f6;
+	font-weight: bold;
+}
+.compare .better{
+    color: #00cc99;
+}
+.contact{
+    background: linear-gradient(#00644b,#009872);
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.contact h2{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 30px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.contact form{
+    display: flex;
+    justify-content: space-between;
+}
+.contact textarea{
+    padding: 10px;
+    font-size: 15px;
+    width: 48%;
+    border-radius: 2px;
+    border: 1px solid #fff;
+}
+.contactinfo{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.contactinfo label{
+    padding-bottom: 5px;
+    color: #fff;
+}
+.contactinfo input{
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    border: 1px solid #fff;
+}
+.contact .submit{
+    padding: 10px 20px;
+    margin-bottom: 0;
+    border: none;
+    color: #fff;
+    background-color: #00cc99;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+.contact .submit:hover{
+    color: #00cc99;
+    background-color: #fff;
+}
+.footer{
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer h2 a{
+    width: 170px;
+    height: 40px;
+    background: url(https://raw.githubusercontent.com/HsiehYaYa/cssfinalhomework/main/images/footerhexlogo.png) no-repeat left bottom;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;  
+}
+.footer li{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.footer ul li a{
+    padding-left: 5px;
+    color: #e54991;
+    display: block;
+}
+.footer ul li a:hover{
+    color: #00cc99;
+}
