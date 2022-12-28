@@ -63,31 +63,65 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-.nav li a{
+.nav a{
     display: block;
+    color: #00cc99;
     margin: 0 15px;
     padding: 15px 10px;
-    color: #00cc99;
-    border-bottom: 4px solid transparent;
-}
-.nav li a:hover{
-    border-bottom: 4px solid #00cc99;
-}
-.banner{
-    background:url(https://raw.githubusercontent.com/HsiehYaYa/cssfinalhomework/main/images/banner.png)no-repeat center;
-    height: 350px;
     position: relative;
 }
-.banner h2{
+.nav>li>a:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0px;
+    height: 0;
+    border-bottom: 3px solid #00cc99;
+    transition: 0.5s;
+}
+.nav>li>a:hover:after{
+    left: 0;
+    right: 0;
+}
+.product-list{
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+.product-list a{
+    background-color: rgba(220, 220, 220, 0.5);
+    color: #009872;
+}
+.product-list a:hover{
+    background-color: #00cc99;
+    color: #fff;
+}
+
+.swiper{
+    height: 340px;
+    position: relative;
+}
+.swiper h2{
     width: 100%;
     font-size: 35px;
 	color: #fff;
 	line-height: 50px;
-    padding: 35px 20px;
+    padding: 35px 50px;
 	position: absolute;
-	top: 95px;
+	top: 85px;
+    z-index: 3;
 	background: rgba(0, 0, 0, 0.2);
 }
+.swiper-button-next ,.swiper-button-prev{
+    color:#fff;
+  }
+.bannerjpg{
+    width: 1002px;
+    position: absolute;
+    top:-150px;
+}  
+
 .course-list{
     padding: 60px 20px;
     display: flex;
@@ -223,4 +257,21 @@ a{
 }
 .footer ul li a:hover{
     color: #00cc99;
+}
+.upbox{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.upicon{
+    text-align:center;
+    display:block;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+    background:#00cc99;
+    font-size:40px;
+    color:#fff;
+    text-decoration: none;
+    line-height:1.7;
 }
