@@ -36,8 +36,17 @@ $(document).ready(function(){
         'wrapAround': true
       });
 
-    $('.upicon').click(function(e){
-        e.preventDefault();
-        $('html,body').animate({scrollTop:0},1000);
-      });
+    function showBtnCondition(){
+    if ($(this).scrollTop() > 500) {
+      $('.upbox a').fadeIn();
+        } else {
+         $('.upbox a').fadeOut();
+       }
+    };
+    $(window).scroll(showBtnCondition);
+
+    $('.upbox').click(function(e){
+      e.preventDefault();
+      $('html,body').animate({scrollTop:0},1000);
+    });
 });

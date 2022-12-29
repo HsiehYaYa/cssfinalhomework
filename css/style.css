@@ -258,20 +258,19 @@ a{
 .footer ul li a:hover{
     color: #00cc99;
 }
-.upbox{
+.upbox a{
     position: fixed;
     bottom: 30px;
     right: 30px;
-}
-.upicon{
     text-align:center;
-    display:block;
+    display:none;
     width:50px;
     height:50px;
-    border-radius:25px;
+    border-radius: 50%;
     background:#00cc99;
     font-size:40px;
     color:#fff;
     text-decoration: none;
+    text-align: center;
     line-height:1.7;
 }
