@@ -43,7 +43,6 @@ a{
     color: #0176a4;
 }
 .menu{
-    margin: 0 auto;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -201,6 +200,7 @@ a{
     width: 48%;
     border-radius: 2px;
     border: 1px solid #fff;
+    resize: none;
 }
 .contactinfo{
     width: 48%;
@@ -230,6 +230,7 @@ a{
 .contact .submit:hover{
     color: #00cc99;
     background-color: #fff;
+    cursor: pointer;
 }
 .footer{
     padding: 25px 20px;
